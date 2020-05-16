@@ -1,11 +1,10 @@
 FROM alpine:latest as base
 
 WORKDIR /tmp/
-ADD https://terraria.org/server/terraria-server-1401.zip /terraria.zip
+ADD https://terraria.org/server/terraria-server-1401.zip terraria.zip
 RUN apk add --update-cache \
     unzip
-RUN ls /tmp
-RUN unzip /tmp/terraria.zip 
+RUN unzip terraria.zip 
 RUN chmod +x 1401/Linux/TerrariaServer 
 RUN chmod +x 1401/Linux/TerrariaServer.bin.x86_64
 
