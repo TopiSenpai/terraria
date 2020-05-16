@@ -4,8 +4,8 @@ WORKDIR /tmp/
 ADD https://terraria.org/server/terraria-server-1401.zip /terraria.zip
 RUN apk add --update-cache \
     unzip terraria.zip \
-    chmod +x /1401/Linux/TerrariaServer \
-    chmod +x /1401/Linux/TerrariaServer.bin.x86_64
+    chmod +x 1401/Linux/TerrariaServer \
+    chmod +x 1401/Linux/TerrariaServer.bin.x86_64
 
 FROM mono:latest
 
