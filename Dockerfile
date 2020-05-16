@@ -1,7 +1,7 @@
 FROM alpine:latest as base
 
 WORKDIR /tmp/
-RUN apt install unzip
+RUN apk add unzip
 ADD https://terraria.org/server/terraria-server-1401.zip /terraria.zip
 RUN apk add --update-cache \
     unzip \
