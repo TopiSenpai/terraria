@@ -15,7 +15,7 @@ WORKDIR /home/terraria
 COPY --from=base /tmp/1401/Linux/ /home/terraria
 COPY config.cfg config.cfg
 
-RUN mkdir world
+RUN mkdir worlds
 
 ENTRYPOINT ["TerrariaServer"]
 CMD ["-config ", "config.cfg"]
