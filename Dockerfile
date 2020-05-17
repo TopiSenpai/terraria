@@ -18,4 +18,4 @@ COPY config.cfg config.cfg
 RUN mkdir worlds
 
 ENTRYPOINT ["./TerrariaServer"]
-CMD ["-config ", ""]
+CMD ["-config ", "config.cfg"]
