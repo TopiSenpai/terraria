@@ -13,9 +13,9 @@ FROM mono:latest
 WORKDIR /home/terraria
 
 COPY --from=base /tmp/1402/Linux/ /home/terraria
-COPY serverconfig.txt serverconfig.txt
+COPY config.cfg config.cfg
 
 RUN mkdir worlds
 
 ENTRYPOINT ["./TerrariaServer"]
-CMD ["-config ", "config.cfg"]
+CMD ["-config ", ""]
